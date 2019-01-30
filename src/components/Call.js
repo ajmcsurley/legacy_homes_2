@@ -4,6 +4,9 @@ import { StaticQuery, graphql } from 'gatsby';
 const Call = props => (
   <div className="call">
     <div className="call-box-top">
+      <div className="call-name">
+        <strong>Name: </strong>
+      </div>
       <div className="call-phone">
         <strong>Phone: </strong>
         {props.data.site.siteMetadata.contact.phone}

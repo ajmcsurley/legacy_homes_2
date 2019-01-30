@@ -8,20 +8,20 @@ module.exports = {
     },
     menuLinks: [
       {
-        name: 'Services',
-        link: '/services',
+        name: 'Sell A Home',
+        link: '/sellhome',
       },
       {
-        name: 'Team',
-        link: '/team',
+        name: 'Buy A Home',
+        link: '/buyhome',
       },
       {
-        name: 'Testimonials',
-        link: '/testimonials',
+        name: 'Join Buyers List',
+        link: '/joinlist',
       },
       {
-        name: 'Contact',
-        link: '/contact',
+        name: 'About Us',
+        link: '/aboutus',
       },
     ],
   },

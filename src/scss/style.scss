@@ -13,12 +13,12 @@
 @import 'bootstrap/tables';
 // @import "bootstrap/images";
 // @import "bootstrap/code";
-// @import "bootstrap/forms";
-// @import "bootstrap/buttons";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
 // @import "bootstrap/transitions";
 // @import "bootstrap/dropdown";
 // @import "bootstrap/button-group";
-// @import "bootstrap/input-group";
+//@import "bootstrap/input-group";
 // @import "bootstrap/custom-forms";
 // @import "bootstrap/nav";
 // @import "bootstrap/navbar";
@@ -43,6 +43,9 @@
 @import 'libraries/hamburgers/hamburgers';
 
 // Components
+@import 'components/banner';
+@import 'components/callnow';
+
 @import 'components/page';
 @import 'components/header';
 @import 'components/footer';

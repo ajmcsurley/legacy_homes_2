@@ -8,8 +8,8 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           query {
-            services: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/services/" } }
+            sellhome: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/sellhome/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               edges {
@@ -24,8 +24,8 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
-            team: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/team/" } }
+            buyhome: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/buyhome/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               edges {
@@ -40,8 +40,8 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
-            testimonials: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/testimonials/" } }
+            joinlist: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/joinlist/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               edges {
@@ -59,8 +59,8 @@ exports.createPages = ({ graphql, actions }) => {
           }
         `,
       ).then((result) => {
-        result.data.services.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/service.js');
+        result.data.sellhome.edges.forEach(({ node }) => {
+          const component = path.resolve('src/templates/services.js');
           createPage({
             path: node.frontmatter.path,
             component,
@@ -69,7 +69,7 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
-        result.data.team.edges.forEach(({ node }) => {
+        result.data.buyhome.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/team.js');
           createPage({
             path: node.frontmatter.path,
@@ -79,7 +79,7 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
-        result.data.testimonials.edges.forEach(({ node }) => {
+        result.data.joinlist.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/testimonial.js');
           createPage({
             path: node.frontmatter.path,

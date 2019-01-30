@@ -15,5 +15,6 @@ module.exports = {
     'react/jsx-max-props-per-line': 'off',
     'react/jsx-tag-spacing': 'off',
     'react/jsx-wrap-multilines': 'off',
+    'linebreak-style': 0,
   },
 }

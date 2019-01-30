@@ -34,6 +34,7 @@
       width: 50%;
     }
   }
+
   p {
     width: 80%;
     font-size: 1.1rem;
@@ -50,7 +51,12 @@
       width: 40%;
     }
   }
+
+  .sell-cash{
+    font-weight: bold;
+  }
 }
+
 .intro-small {
   padding-top: 100px;
   padding-bottom: 30px;

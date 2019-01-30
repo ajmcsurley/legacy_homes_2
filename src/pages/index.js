@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call';
+import CallForm from '../components/CallForm';
 
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
@@ -14,23 +15,25 @@ const Home = (props) => {
       <Helmet>
         <meta
           name="description"
-          content="Small Business Theme. Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This is a beautiful and artfully designed starting theme."
+          content="Helping home buyers and sellers fulfill their legacy."
         />
       </Helmet>
+
+      <h5 className="banner">WE BUY HOUSES IN COLUMBUS OHIO</h5>
+
       <div className="intro pb-4">
         <div className="container">
-          <h1>Serif - Gatsby Small Business Theme.</h1>
-          <p>
-            Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This
-            is a beautiful and artfully designed starting theme.
-          </p>
+          <h1>Legacy Home Group LLC</h1>
+          <p>Helping home buyers and sellers fulfill their legacy.</p>
+          <p>Need cash? Tired landlord? Large repairs needed? Any issue you can think – we have your solution!</p>
+          <p className="sell-cash">Sell your home for cash, FAST.</p>
         </div>
       </div>
 
       <div className="container pt-2">
-        <Call button />
+        <CallForm />
       </div>
-
+{/*
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">
           <div className="col-12">
@@ -55,12 +58,16 @@ const Home = (props) => {
           </div>
         </div>
       </div>
+*/}
 
       <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
         <div className="row justify-content-center">
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-4">Our Features</h2>
+            <h2 className="title-3 text-dark mb-4">Why Sell To Us?</h2>
           </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/suBHAhHEGU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{/*
           {json.map(edge => (
             <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
               <div className="feature">
@@ -74,8 +81,69 @@ const Home = (props) => {
               </div>
             </div>
           ))}
+*/}
+        </div>
+      </div> 
+
+      <div className="container pt-8 pt-md-10">
+        <div className="row justify-content-start">
+          <div className="col-12">
+            <h2 className="title-3 text-dark mb-3">Past Properties</h2>
+          </div>
+          {/* {markdown.map(edge => (
+            <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
+              <div className="card service service-teaser">
+                <div className="card-content">
+                  <h2>
+                    <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
+                  </h2>
+                  <p>{edge.node.excerpt}</p>
+                </div>
+              </div>
+            </div>
+          ))} */}
+          <div className="col-12 mb-1">
+              <div className="card service service-teaser">
+                <div className="card-content">
+                  <h2>
+                    <Link to="/">Property #1</Link>
+                  </h2>
+                  <p>Proin tempor tempus commodo. Phasellus ultrices arcu sed vulputate ornare. Nunc risus lectus, pulvinar id porttitor a, cursus vestibulum sem. Etiam hendrerit rutrum lectus in consequat. Phasellus eu metus ex. Maecenas molestie mauris quis ipsum semper, quis congue nisi ultricies. Quisque aliquam a quam ac viverra. Vestibulum sodales luctus condimentum. Sed euismod ligula in est sodales, in venenatis turpis porta. Donec quis ante congue, lacinia justo sit amet, porta tortor. </p>
+                </div>
+              </div>
+            </div>
+
+          <div className="col-12 mb-1">
+              <div className="card service service-teaser">
+                <div className="card-content">
+                  <h2>
+                    <Link to="/">Property #2</Link>
+                  </h2>
+                  <p>Curabitur sollicitudin tellus sit amet orci placerat, in suscipit lectus dapibus. Curabitur lacinia ante turpis, ac molestie turpis malesuada mollis. Sed vehicula felis non sem imperdiet, non ullamcorper lacus dictum. Nam id massa non mi vehicula cursus nec sit amet diam.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          <div className="col-12 text-center">
+            <Link className="button button-primary mt-2" to="/services">
+              View All Prior Properties
+            </Link>
+          </div>
         </div>
       </div>
+
+      <div className="container pt-8 pt-md-10">
+        <div className="row justify-content-start">
+          <div className="col-12">
+            <h2 className="title-3 text-dark mb-3 text-center">Why Choose Us?</h2>
+          </div>
+          <div className="col-12 text-center">
+            <p>To help in any time of need - We are here to help.</p>
+          </div>
+        </div>
+      </div>
+
     </Layout>
   );
 };

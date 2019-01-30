@@ -26,6 +26,14 @@
     @include media-breakpoint-up(md) {
       padding: 20px;
     }
+
+    .no-obligation {
+      align-self: auto;
+      color: red;
+      font-weight: 550;
+      font-style: italic;
+      padding-left: 30px;
+    }
   }
   .call-box-bottom {
     flex: 0 0 auto;
@@ -38,6 +46,10 @@
     font-size: 1.1rem;
     font-weight: bold;
   }
+  .call-input {
+    padding: 10px;
+  }
+
   svg {
     //       fill: lighten($primary, 30%);
     fill: lighten($secondary, 40%);
