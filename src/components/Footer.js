@@ -13,10 +13,6 @@ const Footer = props => (
                 {' '}
                 <Link to="/">Home</Link>
               </li>
-              <li>
-                {' '}
-                <Link to="/contact">Contact</Link>
-              </li>
               <li className="copyright">
                 ©
 {' '}

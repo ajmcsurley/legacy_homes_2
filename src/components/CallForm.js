@@ -59,7 +59,7 @@ class CallForm extends React.Component {
 
       <form className="call" onSubmit={this.handleFormSubmit}>
         <div className="call-box-top">
-          <p className="no-obligation">No Obligation, See What You Can Get - WE CAN HELP</p>
+          <p className="no-obligation">No Obligation, See What You Can Get - WE CAN HELP.</p>
           <div className="call-input">
             <input id='formName' className="call-input form-control" name='name' type='text' required onChange={this.handleInputChange} value={this.state.newClient.name} placeholder='Name (Required)'/>
           </div>

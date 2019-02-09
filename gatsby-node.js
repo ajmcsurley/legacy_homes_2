@@ -60,7 +60,7 @@ exports.createPages = ({ graphql, actions }) => {
         `,
       ).then((result) => {
         result.data.sellhome.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/services.js');
+          const component = path.resolve('src/templates/service.js');
           createPage({
             path: node.frontmatter.path,
             component,

@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Serif',
-    description: 'my theme',
+    title: 'Legacy Homes Group',
+    description: 'Helping Ohio Home Buyers and Sellers Fulfill Their Legacy',
     contact: {
       phone: 'XXX XXX XXX',
-      email: 'zerostaticthemes@gmail.com',
+      email: 'tommyharr05@gmail.com',
     },
     menuLinks: [
       {
@@ -22,7 +22,7 @@ module.exports = {
       {
         name: 'About Us',
         link: '/aboutus',
-      },
+      }
     ],
   },
   plugins: [
