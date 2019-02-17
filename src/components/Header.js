@@ -31,9 +31,10 @@ class Header extends React.Component {
             </Link>
           </div>
           <div className="logo-mobile">
-            <Link to="/">
+            {/* <Link to="/">
               <img alt="Legacy Homes" src={logoMobile} />
-            </Link>
+            </Link> */}
+            <h5>LegacyHomes</h5>
           </div>
           <MenuMobile active={this.state.menuActive} />
           <Menu />
