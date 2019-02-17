@@ -19,7 +19,7 @@ const Home = (props) => {
         />
       </Helmet>
 
-      <h5 className="banner">WE BUY HOUSES IN COLUMBUS OHIO</h5>
+      {/*<h5 className="banner">WE BUY HOUSES IN COLUMBUS OHIO</h5>*/}
 
       <div className="intro pb-4">
         <div className="container">
