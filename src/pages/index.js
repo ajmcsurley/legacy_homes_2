@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call';
 import CallForm from '../components/CallForm';
-
+import maryland from '../images/2600_Maryland_Avenue/Maryland1.jpg';
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
@@ -106,21 +106,10 @@ const Home = (props) => {
               <div className="card service service-teaser">
                 <div className="card-content">
                   <h2>
-                    <Link to="/">Property #1</Link>
+                    <Link to="/">2600 Maryland Avenue</Link>
                   </h2>
-                  <p>Proin tempor tempus commodo. Phasellus ultrices arcu sed vulputate ornare. Nunc risus lectus, pulvinar id porttitor a, cursus vestibulum sem. Etiam hendrerit rutrum lectus in consequat. Phasellus eu metus ex. Maecenas molestie mauris quis ipsum semper, quis congue nisi ultricies. Quisque aliquam a quam ac viverra. Vestibulum sodales luctus condimentum. Sed euismod ligula in est sodales, in venenatis turpis porta. Donec quis ante congue, lacinia justo sit amet, porta tortor. </p>
-                </div>
-              </div>
-            </div>
-
-          <div className="col-12 mb-1">
-              <div className="card service service-teaser">
-                <div className="card-content">
-                  <h2>
-                    <Link to="/">Property #2</Link>
-                  </h2>
-                  <p>Curabitur sollicitudin tellus sit amet orci placerat, in suscipit lectus dapibus. Curabitur lacinia ante turpis, ac molestie turpis malesuada mollis. Sed vehicula felis non sem imperdiet, non ullamcorper lacus dictum. Nam id massa non mi vehicula cursus nec sit amet diam.
-                  </p>
+                  <img src={maryland} />
+                  <p>Completely renovated, country English-style home situated on large corner lot.  This magnificent home has 6 bedrooms, 7 possible - 4 baths - 2 half baths.  Spectacular kitchen with brand new cabinets, countertops, and state-of-the-art-appliances.  Second floor laundry room.  Central Hall Entry - beautiful crown molding.  Pristine hardwood floors.  Two staircases.  Family room with built-ins.  Large master suite with amazing master bath.  Finished basement with full bath.  Two private patio areas.  Circular driveway with plenty of parking. </p>
                 </div>
               </div>
             </div>

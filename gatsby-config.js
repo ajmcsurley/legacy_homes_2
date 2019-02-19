@@ -4,7 +4,7 @@ module.exports = {
     description: 'Helping Ohio Home Buyers and Sellers Fulfill Their Legacy',
     contact: {
       phone: 'XXX XXX XXX',
-      email: 'tommyharr05@gmail.com',
+      email: 'tom@legacyohiohomes.com',
     },
     menuLinks: [
       {
