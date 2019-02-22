@@ -30,7 +30,6 @@ class CallForm extends React.Component {
   }*/
 
   handleInputChange(event) {
-    console.log(process.env);
     let newState = Object.assign({}, this.state.newClient);
     newState[event.target.name] = event.target.value;
     this.setState({newClient: newState});
@@ -41,9 +40,9 @@ class CallForm extends React.Component {
     
     e.preventDefault();
 
-    const receiverEmail = process.env.REACT_APP_EMAILJS_RECEIVER;
-    const template = process.env.REACT_APP_EMAILJS_TEMPLATEID;
-    const userId = process.env.REACT_APP_EMAILJS_USERID;
+    const receiverEmail = process.env.REACT_APP_EMAILJS_RECEIVER || "tom@legacyohiohomes.com";
+    const template = process.env.REACT_APP_EMAILJS_TEMPLATEID || "sell_client_template";
+    const userId = process.env.REACT_APP_EMAILJS_USERID || "user_R65ISw1mDAAurkZJW3Hlj";
 
     console.log(receiverEmail);
     console.log(template);
