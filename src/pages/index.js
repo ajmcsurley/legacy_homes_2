@@ -6,6 +6,8 @@ import Layout from '../layouts/index';
 import Call from '../components/Call';
 import CallForm from '../components/CallForm';
 import maryland from '../images/2600_Maryland_Avenue/Maryland1.jpg';
+import * as emailjs from 'emailjs-com';
+
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
@@ -20,7 +22,7 @@ const Home = (props) => {
       </Helmet>
 
       {/*<h5 className="banner">WE BUY HOUSES IN COLUMBUS OHIO</h5>*/}
-
+      
       <div className="intro pb-4">
         <div className="container">
           <h1>Legacy Home Group LLC</h1>
@@ -66,7 +68,7 @@ const Home = (props) => {
             <h2 className="title-3 text-dark mb-4">Why Sell To Us?</h2>
           </div>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/suBHAhHEGU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/suBHAhHEGU8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 {/*
           {json.map(edge => (
             <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
