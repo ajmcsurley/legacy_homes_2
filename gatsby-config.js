@@ -7,7 +7,7 @@ module.exports = {
     title: 'Legacy Homes Group',
     description: 'Helping Ohio Home Buyers and Sellers Fulfill Their Legacy',
     contact: {
-      phone: 'XXX XXX XXX',
+      phone: '614-406-0997',
       email: 'tom@legacyohiohomes.com',
     },
     menuLinks: [

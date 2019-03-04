@@ -66,3 +66,13 @@
   //   border-bottom: 1px solid #CCC;
   // }
 }
+
+@media (max-width: 640px) {
+  .call {
+
+    .no-obligation {
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+}

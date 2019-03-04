@@ -4,6 +4,8 @@ import Menu from './Menu';
 import Hamburger from './Hamburger';
 import logo from '../images/logo.svg';
 //import logoMobile from '../images/logo-mobile.svg';
+import legacyLogo from '../images/legacy_logo.png';
+import legacyMobile from '../images/legacy_mobile.png';
 import MenuMobile from './MenuMobile';
 
 class Header extends React.Component {
@@ -26,15 +28,13 @@ class Header extends React.Component {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              {/* <img alt="Legacy Homes" src={logo} /> */}
-              <h5>LegacyHomes</h5>
+               <img alt="Legacy Homes" src={legacyLogo} />
             </Link>
           </div>
           <div className="logo-mobile">
-            {/* <Link to="/">
-              <img alt="Legacy Homes" src={logoMobile} />
-            </Link> */}
-            <h5>LegacyHomes</h5>
+            <Link to="/">
+              <img alt="Legacy Homes" src={legacyLogo} />
+            </Link> 
           </div>
           <MenuMobile active={this.state.menuActive} />
           <Menu />

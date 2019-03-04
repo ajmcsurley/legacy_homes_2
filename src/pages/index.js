@@ -25,7 +25,7 @@ const Home = (props) => {
       
       <div className="intro pb-4">
         <div className="container">
-          <h1>Legacy Home Group LLC</h1>
+          <h1>Legacy Homes Group LLC</h1>
           <p>Helping home buyers and sellers fulfill their legacy.</p>
           <p>Need cash? Tired landlord? Large repairs needed? Any issue you can think – we have your solution!</p>
           <p className="sell-cash">Sell your home for cash, FAST.</p>
@@ -104,17 +104,54 @@ const Home = (props) => {
               </div>
             </div>
           ))} */}
-          <div className="col-12 mb-1">
+
+{/* Property 1 */}
+
+{/*         <div className="col-12 col-md-4 mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
                   <h2>
                     <Link to="/">2600 Maryland Avenue</Link>
                   </h2>
+                  <div className="card-image">
                   <img src={maryland} />
-                  <p>Completely renovated, country English-style home situated on large corner lot.  This magnificent home has 6 bedrooms, 7 possible - 4 baths - 2 half baths.  Spectacular kitchen with brand new cabinets, countertops, and state-of-the-art-appliances.  Second floor laundry room.  Central Hall Entry - beautiful crown molding.  Pristine hardwood floors.  Two staircases.  Family room with built-ins.  Large master suite with amazing master bath.  Finished basement with full bath.  Two private patio areas.  Circular driveway with plenty of parking. </p>
+                  </div>
+                  <ul>
+                    <li>Completely renovated, country English-style home situated on large corner lot</li>
+                    <li>6 bedrooms, 7 possible - 4 baths - 2 half baths</li>
+                    <li>Spectacular kitchen with brand new cabinets, countertops, and state-of-the-art-appliances</li>
+                    <li>Large master suite with amazing master bath</li>
+                    <li>Finished basement</li>
+                    <li>Two private patio areas</li>
+                    <li>Circular driveway with plenty of parking</li>
+
+                  </ul>
                 </div>
               </div>
-            </div>
+          </div> */ }
+
+         <div className="">
+              <div className="">
+                <div className="properties">
+                  <h2>
+                    <Link to="/">2600 Maryland Avenue</Link>
+                  </h2>
+                  <div className="card-image">
+                  <img src={maryland} />
+                  </div>
+                  <ul>
+                    <li>Completely renovated, country English-style home situated on large corner lot</li>
+                    <li>6 bedrooms, 7 possible - 4 baths - 2 half baths</li>
+                    <li>Spectacular kitchen with brand new cabinets, countertops, and state-of-the-art-appliances</li>
+                    <li>Large master suite with amazing master bath</li>
+                    <li>Finished basement</li>
+                    <li>Two private patio areas</li>
+                    <li>Circular driveway with plenty of parking</li>
+
+                  </ul>
+                </div>
+              </div>
+          </div>
 
           <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services">
@@ -122,7 +159,7 @@ const Home = (props) => {
             </Link>
           </div>
         </div>
-      </div>
+      </div>   
 
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">

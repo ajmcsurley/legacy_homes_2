@@ -57,6 +57,16 @@
   }
 }
 
+@media (max-width: 640px) {
+  .intro {
+    padding-top: 50px;
+
+    h1 {
+      width: auto;
+    }
+  }
+}
+
 .intro-small {
   padding-top: 100px;
   padding-bottom: 30px;
