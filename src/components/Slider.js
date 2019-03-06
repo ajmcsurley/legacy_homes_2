@@ -5,7 +5,6 @@ import RightArrow from './RightArrow';
 import maryland1 from '../images/2600_Maryland_Avenue/Maryland1.jpg';
 import maryland2 from '../images/2600_Maryland_Avenue/Maryland2.jpg';
 import maryland3 from '../images/2600_Maryland_Avenue/Maryland3.jpg';
-import maryland4 from '../images/2600_Maryland_Avenue/Maryland4.jpg';
 import maryland5 from '../images/2600_Maryland_Avenue/Maryland5.jpg';
 import maryland6 from '../images/2600_Maryland_Avenue/Maryland6.jpg';
 import maryland8 from '../images/2600_Maryland_Avenue/Maryland8.jpg';
