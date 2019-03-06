@@ -63,6 +63,17 @@
 
     h1 {
       width: auto;
+      font-size: 7.5vw;
+    }
+  }
+
+  .p-content {
+    h1 {
+      padding-left: 5px;
+    }
+    p {
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 }

@@ -42,10 +42,15 @@
 // Libraries
 @import 'libraries/hamburgers/hamburgers';
 
+// FontAwesome
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid";
+
 // Components
 @import 'components/banner';
 @import 'components/callnow';
 @import 'components/properties';
+@import 'components/slider';
 
 @import 'components/page';
 @import 'components/header';

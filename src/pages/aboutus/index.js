@@ -14,7 +14,7 @@ const AboutUs = props => (
       <div className="row">
         <div className="col-12">
         </div>
-        <div className="col-8">
+        <div className="p-content">
             <p>Legacy Home Group LLC was founded in 2018 by Tom Harr. Tom has been a Columbus, OH native his
                 entire life and Tom takes pride in taking part in the development and recreation of the city that he was
                 born and raised in. </p>

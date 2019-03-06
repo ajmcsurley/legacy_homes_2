@@ -15,9 +15,9 @@ const BuyHome = props => (
       <div className="row">
         <div className="col-12">
         </div>
-        <div className="col-8">
+        <div className="p-content">
             <p>Legacy has a proven track record of selling beautifully renovated homes here in Columbus, Ohio.</p>
-            <p><Link to="/services">Click Here to View All Prior Projects</Link></p>
+            <p><Link to="/">Click Here to View All Prior Projects</Link></p>
             <p>We believe that a home is the most important investment someone can make and we go the extra mile
             to renovate and create a beautiful home for our buyers. We renovate every home as if our family were
             moving into the space.</p>
