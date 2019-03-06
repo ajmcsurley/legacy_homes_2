@@ -165,7 +165,7 @@ const Home = (props) => {
             <h2 className="title-3 text-dark mb-3 text-center">Why Choose Us?</h2>
           </div>
           <div className="col-12 text-center">
-            <p>To help in any time of need - We are here to help.</p>
+            <p>In any time of need - We are here to help.</p>
           </div>
         </div>
       </div>

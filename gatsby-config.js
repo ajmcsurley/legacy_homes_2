@@ -19,10 +19,10 @@ module.exports = {
         name: 'Buy A Home',
         link: '/buyhome',
       },
-      {
+ /*     {
         name: 'Join Buyers List',
         link: '/joinlist',
-      },
+      },*/
       {
         name: 'About Us',
         link: '/aboutus',
