@@ -15,7 +15,7 @@ const SellHome = props => (
       <div className="row">
         <div className="col-12">
         </div>
-        <div className="col-8">
+        <div className="p-content">
             <p>Legacy Home Group focuses on <b>helping</b> people out of tough situations or hardships by buying
                 their homes, quick and with <b>cash</b>, and AS-IS condition. So…. why sell to <b>Legacy</b>?</p>
 
@@ -50,7 +50,7 @@ const SellHome = props => (
 
     <div className="container">
       <div className="row steps">
-        <div className="col-8 steps">
+        <div className="p-content">
             <h1>Get Started Today!</h1>
         </div>
       </div>

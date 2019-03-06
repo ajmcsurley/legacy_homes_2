@@ -57,6 +57,27 @@
   }
 }
 
+@media (max-width: 640px) {
+  .intro {
+    padding-top: 50px;
+
+    h1 {
+      width: auto;
+      font-size: 7.5vw;
+    }
+  }
+
+  .p-content {
+    h1 {
+      padding-left: 5px;
+    }
+    p {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
 .intro-small {
   padding-top: 100px;
   padding-bottom: 30px;

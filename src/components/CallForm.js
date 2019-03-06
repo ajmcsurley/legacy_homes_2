@@ -33,7 +33,7 @@ class CallForm extends React.Component {
     let newState = Object.assign({}, this.state.newClient);
     newState[event.target.name] = event.target.value;
     this.setState({newClient: newState});
-    console.log(this.state);
+    //console.log(this.state);
   } 
 
   handleFormSubmit(e) {
@@ -44,9 +44,9 @@ class CallForm extends React.Component {
     const template = process.env.REACT_APP_EMAILJS_TEMPLATEID || "sell_client_template";
     const userId = process.env.REACT_APP_EMAILJS_USERID || "user_R65ISw1mDAAurkZJW3Hlj";
 
-    console.log(receiverEmail);
-    console.log(template);
-    console.log(userId);
+    //console.log(receiverEmail);
+    //console.log(template);
+    //console.log(userId);
     let formData = {
       formName: this.state.newClient.formName,
       formPhone: this.state.newClient.formPhone,
@@ -54,14 +54,14 @@ class CallForm extends React.Component {
       formSellAddress: this.state.newClient.formSellAddress,
       formPrice: this.state.newClient.formPrice
     };
-    console.log(formData);
+    //console.log(formData);
     if (formData.formName.length < 1 || formData.formEmail.length < 1 || formData.formPhone.length < 1 ||
         formData.formSellAddress.length < 1 || formData.formPrice.length < 1 ) {
           alert("Please ensure all fields are filled (greater than 1 character).");
           return false;
     }
 
-    this.sendEmail(template, userId, formData.formName, formData.formPhone, formData.formEmail, formData.formSellAddress, formData.formPrice);
+    //this.sendEmail(template, userId, formData.formName, formData.formPhone, formData.formEmail, formData.formSellAddress, formData.formPrice);
 
     this.setState({
       newClient: {
@@ -72,6 +72,8 @@ class CallForm extends React.Component {
         formPrice: ''
       }
     });
+
+    this.refs.callForm.reset();
   }
 
   sendEmail(templateId, userId, formName, formPhone, formEmail, formSellAddress, formPrice){
@@ -85,7 +87,8 @@ class CallForm extends React.Component {
       formPrice
     }, userId)
     .then(res => {
-      this.setState({formEmailSent: true })
+      this.setState({formEmailSent: true });
+      
     })
     //Handle error
     .catch(err => console.error('Failed to send email. Error: ', err));
@@ -93,7 +96,7 @@ class CallForm extends React.Component {
 
   render() {
     return (
-      <form className="call" onSubmit={this.handleFormSubmit}>
+      <form className="call" onSubmit={this.handleFormSubmit} ref="callForm">
         <div className="call-box-top">
           <p className="no-obligation">No Obligation, See What You Can Get - WE CAN HELP.</p>
           <div className="call-input">
