@@ -21,7 +21,6 @@ export default class Slider extends Component {
                 maryland1,
                 maryland2,
                 maryland3,
-                maryland4,
                 maryland5,
                 maryland6,
                 maryland8,
