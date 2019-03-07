@@ -5,7 +5,7 @@ import CallForm from '../../components/CallForm';
 
 const SellHome = props => (
   <Layout bodyClass="page-sellhome">
-    <SEO title="Sell A Home | Legacy Homes Group" />
+    <SEO title="Sell A Home | Legacy Home Group" />
     <div className="intro intro-small">
       <div className="container">
             <h1>Sell A Home To Legacy Homes Group</h1>     

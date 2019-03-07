@@ -2,10 +2,11 @@ import React from 'react';
 import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
 import { graphql, withPrefix, Link } from 'gatsby';
+import CallForm from '../../components/CallForm';
 
 const BuyHome = props => (
   <Layout bodyClass="page-contact">
-    <SEO title="Buy A Home | Legacy Homes Group" />
+    <SEO title="Buy A Home | Legacy Home Group" />
     <div className="intro intro-small">
       <div className="container">
             <h1>Buy A Home From Legacy Homes Group</h1>     
@@ -17,7 +18,7 @@ const BuyHome = props => (
         </div>
         <div className="p-content">
             <p>Legacy has a proven track record of selling beautifully renovated homes here in Columbus, Ohio.</p>
-            <p><Link to="/projects">Click Here to View All Prior Projects</Link></p>
+            <p className="text-center"><Link to="/projects">Click Here to View All Prior Projects</Link></p>
             <p>We believe that a home is the most important investment someone can make and we go the extra mile
             to renovate and create a beautiful home for our buyers. We renovate every home as if our family were
             moving into the space.</p>
@@ -28,12 +29,12 @@ const BuyHome = props => (
             <p>If Legacy has you on their list and a home comes through, the home can be customized to the final
             buyer's specifications!</p>
         </div>
+      </div>
 
-      <div className="container pt-2">
+      <div className="row justify-content-center">
         <CallForm />
       </div>
       
-      </div>
     </div>
   </Layout>
 );

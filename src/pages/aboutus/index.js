@@ -20,10 +20,10 @@ const AboutUs = props => (
                 born and raised in. </p>
             <p>Our call to action - “Helping home sellers and buyers fulfill their legacy” -
                 means helping out all people in a time of need and relieving a large burden off of their shoulders, so
-                they can create their future that lies ahead. We treat all of our customers, colleagues like family. </p>
-            <p>We believe in doing business with the greatest effort, respect, customer-first mentalities.
-                When you do business with LHG, you are treated as if you are family!
-                We are experts in the field of real estate and we understand that selling your home can be an
+                they can create their future that lies ahead. We treat all of our customers, colleagues, everyone like family. </p>
+            <p>We believe in doing business with the greatest effort, respect, and customer-first mentalities.
+                When you do business with LHG, you are treated as if you are family!</p>
+            <p>We are experts in the field of real estate and we understand that selling your home can be an
                 exhausting task. We are here to help in the time of need and to push you to the next step! Feel free to
                 reach out today about all your real estate needs!</p>
         </div>
