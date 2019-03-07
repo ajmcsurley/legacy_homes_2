@@ -17,17 +17,22 @@ const BuyHome = props => (
         </div>
         <div className="p-content">
             <p>Legacy has a proven track record of selling beautifully renovated homes here in Columbus, Ohio.</p>
-            <p><Link to="/">Click Here to View All Prior Projects</Link></p>
+            <p><Link to="/projects">Click Here to View All Prior Projects</Link></p>
             <p>We believe that a home is the most important investment someone can make and we go the extra mile
             to renovate and create a beautiful home for our buyers. We renovate every home as if our family were
             moving into the space.</p>
             <p>Take a look at the homes listed below, and if you would like to schedule a walkthrough, please fill out the
             tab under the home that states “Schedule A Showing Today”.</p>
             <p>If you are someone who loves the homes Legacy Home Group renovates, but they are either not available or you
-            would like a specific area, please fill out a buyers form or contact us today.</p>
+            would like a specific area, please fill out a buyers form below or contact us today.</p>
             <p>If Legacy has you on their list and a home comes through, the home can be customized to the final
             buyer's specifications!</p>
         </div>
+
+      <div className="container pt-2">
+        <CallForm />
+      </div>
+      
       </div>
     </div>
   </Layout>

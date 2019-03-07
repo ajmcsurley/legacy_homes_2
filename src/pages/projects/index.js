@@ -5,10 +5,10 @@ import CallForm from '../../components/CallForm';
 
 const SellHome = props => (
   <Layout bodyClass="page-sellhome">
-    <SEO title="Sell A Home | Legacy Homes Group" />
+    <SEO title="Past Properties | Legacy Homes Group" />
     <div className="intro intro-small">
       <div className="container">
-            <h1>Sell A Home To Legacy Homes Group</h1>     
+            <h1>Past Properties</h1>     
       </div>
     </div>
     <div className="container">
