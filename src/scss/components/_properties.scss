@@ -18,6 +18,13 @@
         width: auto;
         max-width: 100%;
     }
+
+    @media (max-width: 640px) {
+        iframe {
+            width: 350px;
+            height: 200px;
+        }
+    }
     
 }
 
