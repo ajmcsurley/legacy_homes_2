@@ -64,7 +64,7 @@ class BuyerListForm extends React.Component {
           return false;
     }
 
-    //this.sendEmail(template, userId, formData.formName, formData.formPhone, formData.formEmail, formData.formZipCode, formData.formBedBath, formData.formFamily);
+    this.sendEmail(template, userId, formData.formName, formData.formPhone, formData.formEmail, formData.formZipCode, formData.formBedBath, formData.formFamily);
 
     alert("Thank you for your submission!");
 

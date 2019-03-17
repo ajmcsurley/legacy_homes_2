@@ -61,10 +61,10 @@ class CallForm extends React.Component {
           return false;
     }
 
-    //this.sendEmail(template, userId, formData.formName, formData.formPhone, formData.formEmail, formData.formSellAddress, formData.formPrice);
+    this.sendEmail(template, userId, formData.formName, formData.formPhone, formData.formEmail, formData.formSellAddress, formData.formPrice);
 
     alert("Thank you for your submission!");
-    
+
     this.setState({
       newClient: {
         formName: '',

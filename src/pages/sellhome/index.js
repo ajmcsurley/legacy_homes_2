@@ -33,7 +33,8 @@ const SellHome = props => (
             <p>At Legacy, we are experienced investors and have helped people in all situations. Whether you
             are tired of being a landlord, in foreclosure, lost a job, inherited a home, have large repairs
             needed, or just want to move on and create your <b>legacy!</b> We are here to <b>help!</b></p>
-            <p><b>No agents involved.</b>
+            <p><b>No agents involved.</b></p>
+            <p><b>Why is this beneficial to you?</b>
                 <ul> 
                     <li>No having to leave your house every day for showings!</li>
                     <li>No cleaning every day before showings/open houses!</li>
