@@ -1,7 +1,7 @@
 import React from 'react';
 import * as emailjs from 'emailjs-com';
 
-class CallForm extends React.Component {
+class BuyerListForm extends React.Component {
 
   constructor(props) {
     super(props);
@@ -10,8 +10,9 @@ class CallForm extends React.Component {
           formName: '',
           formPhone: '',
           formEmail: '',
-          formSellAddress: '',
-          formPrice: ''
+          formZipCode: '',
+          formBedBath: '',
+          formFamily: ''
         },
         formSubmitted: false,
         formEmailSent: false
@@ -41,7 +42,7 @@ class CallForm extends React.Component {
     e.preventDefault();
 
     const receiverEmail = process.env.REACT_APP_EMAILJS_RECEIVER || "tom@legacyohiohomes.com";
-    const template = process.env.REACT_APP_EMAILJS_TEMPLATEID || "sell_client_template";
+    const template = "buyer_list_template";
     const userId = process.env.REACT_APP_EMAILJS_USERID || "user_R65ISw1mDAAurkZJW3Hlj";
 
     //console.log(receiverEmail);
@@ -51,42 +52,46 @@ class CallForm extends React.Component {
       formName: this.state.newClient.formName,
       formPhone: this.state.newClient.formPhone,
       formEmail: this.state.newClient.formEmail,
-      formSellAddress: this.state.newClient.formSellAddress,
-      formPrice: this.state.newClient.formPrice
+      formZipCode: this.state.newClient.formZipCode,
+      formBedBath: this.state.newClient.formBedBath,
+      formFamily: this.state.newClient.formFamily
     };
+
     //console.log(formData);
     if (formData.formName.length < 1 || formData.formEmail.length < 1 || formData.formPhone.length < 1 ||
-        formData.formSellAddress.length < 1 || formData.formPrice.length < 1 ) {
+        formData.formZipCode.length < 1 || formData.formBedBath.length < 1  || formData.formFamily.length < 1) {
           alert("Please ensure all fields are filled (greater than 1 character).");
           return false;
     }
 
-    //this.sendEmail(template, userId, formData.formName, formData.formPhone, formData.formEmail, formData.formSellAddress, formData.formPrice);
+    //this.sendEmail(template, userId, formData.formName, formData.formPhone, formData.formEmail, formData.formZipCode, formData.formBedBath, formData.formFamily);
 
     alert("Thank you for your submission!");
-    
+
     this.setState({
       newClient: {
         formName: '',
         formPhone: '',
         formEmail: '',
-        formSellAddress: '',
-        formPrice: ''
+        formZipCode: '',
+        formBedBath: '',
+        formFamily: ''
       }
     });
 
-    this.refs.callForm.reset();
+    this.refs.buyerListForm.reset();
   }
 
-  sendEmail(templateId, userId, formName, formPhone, formEmail, formSellAddress, formPrice){
+  sendEmail(templateId, userId, formName, formPhone, formEmail, formZipCode, formBedBath, formFamily){
     emailjs.send('mailgun',
     templateId,
     {
       formName,
-      formSellAddress,
       formPhone,
       formEmail,
-      formPrice
+      formZipCode,
+      formBedBath,
+      formFamily
     }, userId)
     .then(res => {
       this.setState({formEmailSent: true });
@@ -98,9 +103,8 @@ class CallForm extends React.Component {
 
   render() {
     return (
-      <form className="call" onSubmit={this.handleFormSubmit} ref="callForm">
+      <form className="call" onSubmit={this.handleFormSubmit} ref="buyerListForm">
         <div className="call-box-top">
-          <p className="no-obligation">No Obligation, See What You Can Get - WE CAN HELP.</p>
           <div className="call-input">
             <input id='formName' className="call-input form-control" name='formName' type='text' required onChange={this.handleInputChange} value={this.state.newClient.name} placeholder='Name (Required)'/>
           </div>
@@ -111,13 +115,16 @@ class CallForm extends React.Component {
             <input id='formEmail' className="call-input form-control" name='formEmail' type='email' required onChange={this.handleInputChange} value={this.state.newClient.email} placeholder='Email' />
           </div>
           <div className="call-input">
-            <input id='formSellAddress' className="call-input form-control" name='formSellAddress' type='text' required onChange={this.handleInputChange} value={this.state.newClient.sellAddress} placeholder='Home for Sale Address' />
+            <input id='formZipCode' className="call-input form-control" name='formZipCode' type='text' required onChange={this.handleInputChange} value={this.state.newClient.zipCode} placeholder='ZIP Code Desired' />
           </div>
           <div className="call-input">
-            <input id='formPrice' className="call-input form-control" name='formPrice' type='text' required onChange={this.handleInputChange} value={this.state.newClient.price} placeholder='Desired Price' />
+            <input id='formBedBath' className="call-input form-control" name='formBedBath' type='text' required onChange={this.handleInputChange} value={this.state.newClient.bedBath} placeholder='Beds and Baths (ex. 1BR 1BA)' />
           </div>
+          <div className="call-input">
+            <input id='formFamily' className="call-input form-control" name='formFamily' type='text' required onChange={this.handleInputChange} value={this.state.newClient.family} placeholder='Single-Family / Multi-Family' />
+          </div>          
           <div className="call-box-bottom">
-            <input className="button btn" type='submit' placeholder='Get My Fair Cash Offer' />
+            <input className="button btn" type='submit' placeholder='Join Buyer List' />
           </div>
         </div>
 
@@ -126,4 +133,4 @@ class CallForm extends React.Component {
   }
 }
 
-export default CallForm;
+export default BuyerListForm;

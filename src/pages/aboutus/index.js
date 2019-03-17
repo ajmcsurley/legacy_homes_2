@@ -3,11 +3,11 @@ import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
 
 const AboutUs = props => (
-  <Layout bodyClass="page-contact">
-    <SEO title="About Us" />
+  <Layout bodyClass="page-sellhome">
+    <SEO title="About Us | Legacy Home Group" />
     <div className="intro intro-small">
       <div className="container">
-            <h1>About Legacy Homes Group</h1>     
+            <h1>About Legacy Home Group</h1>     
       </div>
     </div>
     <div className="container">

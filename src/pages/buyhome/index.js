@@ -9,7 +9,7 @@ const BuyHome = props => (
     <SEO title="Buy A Home | Legacy Home Group" />
     <div className="intro intro-small">
       <div className="container">
-            <h1>Buy A Home From Legacy Homes Group</h1>     
+            <h1>Buy A Home From Legacy Home Group</h1>     
       </div>
     </div>
     <div className="container">

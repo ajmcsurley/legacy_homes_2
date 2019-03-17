@@ -1,7 +1,7 @@
 import React from 'react';
 import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
-import CallForm from '../../components/CallForm';
+import BuyerListForm from '../../components/BuyerListForm';
 
 const JoinList = props => (
   <Layout bodyClass="page-sellhome">
@@ -25,7 +25,7 @@ const JoinList = props => (
       </div>
 
       <div className="row justify-content-center">
-          <CallForm />
+          <BuyerListForm />
       </div>
 
     </div>

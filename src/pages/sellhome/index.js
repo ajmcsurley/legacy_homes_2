@@ -8,7 +8,7 @@ const SellHome = props => (
     <SEO title="Sell A Home | Legacy Home Group" />
     <div className="intro intro-small">
       <div className="container">
-            <h1>Sell A Home To Legacy Homes Group</h1>     
+            <h1>Sell A Home To Legacy Home Group</h1>     
       </div>
     </div>
     <div className="container">
@@ -57,7 +57,7 @@ const SellHome = props => (
       <div className="row steps">
         <div className="col-12">
             <p>Step 1: Fill out information below - Name, Email, Homes Address, Price (optional)</p>
-            <p>Step 2: Phone call from Legacy Homes representatives regarding an offer / walk-through of your home</p>
+            <p>Step 2: Phone call from Legacy Home representatives regarding an offer / walk-through of your home</p>
             <p>Step 3: Get Offer – No obligations, you may accept or reject cash offer</p>
             <p>Step 4: Cash for home!</p>
         </div>
