@@ -11,6 +11,7 @@ import Slider from '../components/Slider';
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
+
   return (
     <Layout bodyClass="page-home">
       <SEO title="Home | Legacy Home Group" />
@@ -20,8 +21,6 @@ const Home = (props) => {
           content="Helping home buyers and sellers fulfill their legacy."
         />
       </Helmet>
-
-      {/*<h5 className="banner">WE BUY HOUSES IN COLUMBUS OHIO</h5>*/}
       
       <div className="intro pb-4">
         <div className="container">
@@ -35,8 +34,8 @@ const Home = (props) => {
       <div className="container pt-2">
         <CallForm />
       </div>
-{/*
-      <div className="container pt-8 pt-md-10">
+
+{/*}      <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">
           <div className="col-12">
             <h2 className="title-3 text-dark mb-3">Our Services</h2>
@@ -62,13 +61,14 @@ const Home = (props) => {
       </div>
 */}
 
+
       <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
         <div className="row justify-content-center">
           <div className="col-12">
             <h2 className="title-3 text-dark mb-4">Why Sell To Us?</h2>
           </div>
           
-          <p className="text-center">Stay tuned for our intro video!</p>
+          <p className="text-center">[[ Video Here ]]</p>
 {/*
           {json.map(edge => (
             <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
@@ -142,18 +142,6 @@ const Home = (props) => {
           </div>
         </div>
       </div>   
-
-      <div className="container pt-8 pt-md-10">
-        <div className="row justify-content-start">
-          <div className="col-12">
-            <h2 className="title-3 text-dark mb-3 text-center">Why Choose Us?</h2>
-          </div>
-          <div className="col-12 text-center">
-            <p>In any time of need - We are here to help.</p>
-          </div>
-        </div>
-      </div>
-
     </Layout>
   );
 };
@@ -186,6 +174,7 @@ export const query = graphql`
         }
       }
     }
+
   }
 `;
 

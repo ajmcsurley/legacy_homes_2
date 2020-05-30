@@ -16,10 +16,6 @@ module.exports = {
         link: '/sellhome',
       },
       {
-        name: 'Buy A Home',
-        link: '/buyhome',
-      },
-      {
         name: 'Join Buyers List',
         link: '/joinlist',
       },

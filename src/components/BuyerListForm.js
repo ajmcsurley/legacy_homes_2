@@ -41,7 +41,7 @@ class BuyerListForm extends React.Component {
     
     e.preventDefault();
 
-    const receiverEmail = process.env.REACT_APP_EMAILJS_RECEIVER || "tom@legacyohiohomes.com";
+    const receiverEmail = process.env.REACT_APP_EMAILJS_RECEIVER || "info@legacyohiohomes.com";
     const template = "buyer_list_template";
     const userId = process.env.REACT_APP_EMAILJS_USERID || "user_R65ISw1mDAAurkZJW3Hlj";
 
@@ -123,7 +123,7 @@ class BuyerListForm extends React.Component {
           <div className="call-input">
             <input id='formFamily' className="call-input form-control" name='formFamily' type='text' required onChange={this.handleInputChange} value={this.state.newClient.family} placeholder='Single-Family / Multi-Family' />
           </div>          
-          <div className="call-box-bottom">
+          <div className="call-box-bottom text-center">
             <input className="button btn" type='submit' placeholder='Join Buyer List' />
           </div>
         </div>
